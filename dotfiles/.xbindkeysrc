@@ -1,0 +1,19 @@
+## Instructions
+
+# * Install sudo apt-get install xbindkeys xautomation first
+# * copy this file to home dir
+# * killall xbindkeys && xbindkeys
+# * add xbindkeys to the startup programms
+
+## Note
+# This will only work with xorg, not with wayland
+
+# Gnome overview with tumb button
+"xte 'keydown Super_L'"
+  b:10
+
+"xte 'keyup Super_L'"
+  Mod4 + b:10 + release
+  
+  
+  
