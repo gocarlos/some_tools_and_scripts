@@ -1,3 +1,6 @@
+## What this file does: 
+# Map Logitech Performance MX keys to keyboard keys i.o. to perform desktop actions
+
 ## Instructions
 
 # * Install sudo apt-get install xbindkeys xautomation first
