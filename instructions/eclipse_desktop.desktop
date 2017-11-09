@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Eclipse 4
+Type=Application
+Exec=bash -i -c "~/apps/eclipse/eclipse"
+Terminal=false
+Icon=~/apps/eclipse/icon.xpm
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Eclipse
