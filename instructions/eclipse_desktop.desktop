@@ -8,3 +8,5 @@ Comment=Integrated Development Environment
 NoDisplay=false
 Categories=Development;IDE;
 Name[en]=Eclipse
+#~/.local/share/applications/eclipse.desktop
+
