@@ -41,7 +41,7 @@ def try_install_wakeonlan():
         try:
             import pip
             pip.main(['install', "wakeonlan"])
-        except Exception, e:
+        except e:
             print("Failed to upload to ftp: "+ str(e))
             print(bcolors.FAIL + "\nYou dont have pip installed, do that first.\nExiting...\n\n" + bcolors.ENDC)
 
