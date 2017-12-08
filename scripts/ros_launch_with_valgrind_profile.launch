@@ -1,3 +1,10 @@
+<!--
+To profile a ROS node first install those tools:
+    sudo apt-get install valgrind kcachegrind graphviz
+
+The file gets saved into ~/.ros/callgrind.out.XXX file, XXX will be the process identifier.
+ -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <arg name="device_id" default="/dev/video0"/>
