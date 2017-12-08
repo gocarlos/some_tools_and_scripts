@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <arg name="device_id" default="/dev/video0"/>
+    <group ns="my_ns">
+        <node name="my_pkg" pkg="my_pkg" type="my_node" respawn="false" output="screen" launch-prefix="valgrind --tool=callgrind">
+            <!-- Configuration file -->
+            <rosparam file="$(find other_pkg)/config/config.yaml"/>
+            <param name="my_param" value="$(arg device_id)"/>
+            <param name="my_param" value="30"/>
+        </node>
+    </group>
+</launch>
