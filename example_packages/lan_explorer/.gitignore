@@ -1,2 +1,9 @@
+# Build artifacts
+
 /build/*
 include/lan_explorer/settings.hpp
+
+# Snap stuff
+stage
+parts
+prime

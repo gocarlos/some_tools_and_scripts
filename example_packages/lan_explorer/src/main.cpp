@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
   std::cout << home_path << std::endl;
   auto app =
     Gtk::Application::create(argc, argv,
-      "ch.martinho.lan_explorer.");
+      "ch.martinho.lan_explorer");
 
   Gtk::Window window;
   window.set_default_size(200, 200);
