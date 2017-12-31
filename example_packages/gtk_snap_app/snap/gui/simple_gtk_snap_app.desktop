@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=simple-gtk-snap-app
+GenericName=TODO
+Comment=TODO.
+Keywords=todo;
+Exec=simple-gtk-snap-app
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=true
+StartupNotify=true

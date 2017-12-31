@@ -1,0 +1,51 @@
+name:               simple-gtk-snap-app
+version:            '0.0.1'
+summary:            simple-gtk-snap-app
+description:        |
+  simple-gtk-snap-app
+
+grade:              stable
+confinement:        devmode
+icon:               snap/gui/icon.png
+type:               app
+
+
+apps:
+  simple-gtk-snap-app:
+    command:        desktop-launch ${SNAP}/bin/simple-gtk-snap-app
+    plugs:
+      - home
+      - unity7
+      - x11
+      - wayland
+      - gsettings
+      - network-bind
+      - network-control
+      - account-control
+
+# Launch Synaptic to get the description of the following deb packages.
+parts:
+  simple-gtk-snap-app:
+    source: .
+    plugin: cmake
+    after:          [desktop-gtk3]
+    # A list of Ubuntu packages to be installed on the host to aid in building the part. These packages will not go into the final snap.
+    build-packages:
+      - cmake
+      - build-essential
+      - libgtkmm-3.0-dev
+  desktop-gtk3:
+      # A set of Ubuntu packages to be downloaded and unpacked to join the part before it’s built. Note that these packages are not installed on the host. Like the rest of the part, all files from these packages will make it into the final snap unless filtered out via the prime keyword.
+    stage-packages:
+      - libglib2.0-0
+      - libglib2.0-bin
+      - libgtk-3-0
+      - libgtk-3-dev
+      - libc6
+      - libstdc++6
+      - light-themes
+      - locales-all
+      - shared-mime-info
+      - libxkbcommon0
+      - zlib1g
+      - shared-mime-info
