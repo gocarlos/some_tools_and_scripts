@@ -1,3 +1,10 @@
+# Copyright (c) 2018, Carlos Gomes Martinho
+# SPDX-License-Identifier:	BSL-1.0
+
+# This script finds files (C/C++ & Proto) in the subdirectories and checks if the format is correct 
+# Needs a .clang-format file somewhere in the current of parent directory
+# Returns 1 if there is at least one file that is not well formatted
+
 FAILED=0
 echo "Script name: $0"
 work_dir=$(pwd) 
